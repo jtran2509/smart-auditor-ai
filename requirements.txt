@@ -1,0 +1,40 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# ML & Document AI
+torch
+torchvision
+transformers
+pillow
+pytesseract
+pdfplumber
+tesseract-ocr
+tesseract-ocr-por
+
+# RAG & Vector DB
+langchain
+langchain-community
+chromadb
+tiktoken
+
+# Data Processing
+pandas
+numpy
+opencv-python
+
+# Utilities
+python-multipart
+python-dotenv
+environs
+loguru
+
+# Development & Code Quality
+black
+isort
+flake8
+pytest
+pytest-asyncio
+httpx

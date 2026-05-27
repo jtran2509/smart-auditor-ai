@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+venv/
+ENV/
+dist/
+build/
+*.egg-info/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs và databases
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Big data file, don't push to Github
+data/raw/
+data/processed/
+data/uploads/
+data/chromadb/
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# Model files (quá lớn)
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.h5
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets
+.env
+*.key
+*.pem
