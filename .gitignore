@@ -34,6 +34,7 @@ data/chromadb/
 *.jpeg
 *.png
 *.pdf
+*.zip
 
 # Model files (quá lớn)
 *.pth

@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:800"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TESSERACT_CMD=/usr/bin/tesseract
+  chromadb:
+    image: chromadb/chroma:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_data:/chroma/chroma
