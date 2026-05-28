@@ -37,3 +37,6 @@ flake8
 pytest
 pytest-asyncio
 httpx
+
+# Gradio UI
+gradio
