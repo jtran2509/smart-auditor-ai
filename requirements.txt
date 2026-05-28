@@ -11,8 +11,6 @@ transformers
 pillow
 pytesseract
 pdfplumber
-tesseract-ocr
-tesseract-ocr-por
 
 # RAG & Vector DB
 langchain
