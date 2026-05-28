@@ -15,5 +15,5 @@ def test_root_endpoint():
     assert "docs" in response.json()
 
 def test_invoice_upload_no_file():
-    response = client.post("/api/v1/invoice/upload")
-    assert response.status_code ==422 # Missing file
+    response = client.post("/api/v1/invoices/upload") 
+    assert response.status_code == 422  # Missing file
