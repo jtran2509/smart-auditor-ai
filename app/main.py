@@ -20,7 +20,6 @@ logging.basicConfig(
 )
 
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-# login(token="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")
 
 # Create FastAPI instance with metadata
 app = FastAPI(

@@ -15,7 +15,9 @@ import torch
 logging.basicConfig(level=logging.INFO)
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-login(token="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")
+hf_token = os.environ.get("HF_TOKEN")
+if hf_token:
+    login(token=hf_token)
 
 # def debug_model_labels():
 #     """Debug: In ra tất cả labels của model"""
