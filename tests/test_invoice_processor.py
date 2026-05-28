@@ -39,7 +39,7 @@ def test_processor():
     processor = get_invoice_processor()
     
     for test_image in test_images:
-        print(f"\n{"="*60}")
+        print(f"\n{'='*60}")
         print(f"Testing with image: {test_image.name}")
         print("=" * 60)
 
