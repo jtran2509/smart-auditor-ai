@@ -63,7 +63,7 @@ def create_gradio_interface():
     """
     Create Gradio interface for Smart Auditor AI
     """
-    with gr.Blocks(title="Smart Auditor AI", theme=gr.themes.Soft()) as demo:
+    with gr.Blocks(title="Smart Auditor AI") as demo:
         gr.Markdown("""
         # 📝 Smart Auditor AI
         ### Automated Invoice Fraud Detection System
