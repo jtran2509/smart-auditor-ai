@@ -9,6 +9,8 @@
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97-Live%20Demo-blue)](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
 [![CI/CD](https://github.com/jtran2509/smart-auditor-ai/actions/workflows/test.yml/badge.svg)](https://github.com/jtran2509/smart-auditor-ai/actions/workflows/test.yml)
 
+# Demo link: [Smart Auditor AI](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
+
 ## 📌 Overview
 Smart Auditor AI is an end-to-end invoice fraud detection system that automatically:
 - **Extracts** key  information from invoice messages (Company, Date, Total Amount, Invoice number).
