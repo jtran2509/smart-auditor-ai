@@ -28,8 +28,9 @@ build/
 # Big data file, don't push to Github
 data/raw/
 data/processed/
-data/uploads/
 data/chromadb/
+app/models/layoutlmv3-processor
+app/models/layoutlmv3-finetuned
 *.jpg
 *.jpeg
 *.png
@@ -52,4 +53,3 @@ desktop.ini
 .env
 *.key
 *.pem
-debug/

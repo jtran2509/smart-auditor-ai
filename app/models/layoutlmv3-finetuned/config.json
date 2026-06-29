@@ -14,23 +14,21 @@
   "hidden_dropout_prob": 0.1,
   "hidden_size": 768,
   "id2label": {
-    "0": "ADDRESS",
-    "1": "COMPANY",
-    "2": "DATE",
-    "3": "INVOICE_NUMBER",
-    "4": "O",
-    "5": "TOTAL"
+    "0": "O",
+    "1": "ADDRESS",
+    "2": "COMPANY",
+    "3": "DATE",
+    "4": "TOTAL"
   },
   "initializer_range": 0.02,
   "input_size": 224,
   "intermediate_size": 3072,
   "label2id": {
-    "ADDRESS": 0,
-    "COMPANY": 1,
-    "DATE": 2,
-    "INVOICE_NUMBER": 3,
-    "O": 4,
-    "TOTAL": 5
+    "ADDRESS": 1,
+    "COMPANY": 2,
+    "DATE": 3,
+    "O": 0,
+    "TOTAL": 4
   },
   "layer_norm_eps": 1e-05,
   "max_2d_position_embeddings": 1024,
@@ -48,7 +46,7 @@
   "second_input_size": 112,
   "shape_size": 128,
   "text_embed": true,
-  "transformers_version": "5.0.0",
+  "transformers_version": "5.12.0",
   "type_vocab_size": 1,
   "use_cache": false,
   "visual_embed": true,

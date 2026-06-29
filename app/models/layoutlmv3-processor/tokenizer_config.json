@@ -13,6 +13,7 @@
   "eos_token": "</s>",
   "errors": "replace",
   "is_local": false,
+  "local_files_only": false,
   "mask_token": "<mask>",
   "model_max_length": 512,
   "only_label_first_subword": true,

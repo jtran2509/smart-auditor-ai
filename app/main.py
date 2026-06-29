@@ -5,13 +5,13 @@ import gradio as gr
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import logging
-from app.gradio_app import create_gradio_interface
+from gradio_app import create_gradio_interface
 import pytesseract
 from huggingface_hub import login
 
 # Import routers
 from app.api.routes import invoices
-from app.gradio_app import create_gradio_interface
+from gradio_app import create_gradio_interface
 
 # Configure logging
 logging.basicConfig(

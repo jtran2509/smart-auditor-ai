@@ -3,6 +3,7 @@ fastapi
 uvicorn[standard]
 pydantic
 pydantic-settings
+opencv-python-headless
 
 # ML & Document AI
 torch
@@ -12,6 +13,9 @@ pillow
 pytesseract
 easyocr
 pdfplumber
+
+# LLM
+google-generativeai
 
 # RAG & Vector DB
 langchain

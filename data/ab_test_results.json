@@ -1,0 +1,14 @@
+{
+  "model_a": {
+    "name": "Regex",
+    "total": 3,
+    "success": 3,
+    "total_time": 1.8805148601531982
+  },
+  "model_b": {
+    "name": "Fine-tuned LayoutLMv3",
+    "total": 5,
+    "success": 5,
+    "total_time": 51.286723613739014
+  }
+}

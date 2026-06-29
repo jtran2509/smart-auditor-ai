@@ -5,13 +5,17 @@ import torch
 from PIL import Image
 from transformers import LayoutLMv3Processor, LayoutLMv3ForTokenClassification
 from pathlib import Path
+import os
+import pytesseract
 
-def load_finetuned_model(model_path: str = "D:/smart-auditor-ai/app/models"):
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+def load_finetuned_model(model_path: str = r"D:/smart-auditor-ai/app/models/layoutlmv3-processor"):
     """
     Load fine-tuned model
     """
     processor = LayoutLMv3Processor.from_pretrained(model_path, apply_ocr=True)
-    model = LayoutLMv3ForTokenClassification.from_pretrained(model_path)
+    model = LayoutLMv3ForTokenClassification.from_pretrained(r"D:\smart-auditor-ai\app\models\layoutlmv3-finetuned")
 
     return processor, model
 
@@ -63,3 +67,8 @@ if __name__ == "__main__":
 
     print(f"Image: {test_image.name}")
     print(f"Extracted: {result}")
+
+# finetuned_path = "D:/smart-auditor-ai/app/models/layoutlmv3-finetuned"
+# processor_path = "D:/smart-auditor-ai/app/models/layoutlmv3-processor"
+# print(os.listdir(finetuned_path))
+# print(os.listdir(processor_path))
