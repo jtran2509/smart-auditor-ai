@@ -18,7 +18,6 @@ from app.services.rag_service import get_rag_service
 from app.agents.mcp_server import get_mcp_server
 from app.services.llm_service import generate_audit_report
 from app.services.ab_testing import get_ab_testing_service
-from app.models.invoice_processor import get_invoice_processor
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/v1/invoices", tags=['Invoices'])
@@ -82,7 +81,7 @@ async def upload_invoice(file: UploadFile = File(...), background_tasks: Backgro
             fraud_flags.append({
                 "type": "DUPLICATE",
                 "severity": "HIGH",
-                "details": f"Vendor {extracted_data.get("company_name")} has high risk score: {vendor_risk.get("risk_score")}"
+                "details": f"Vendor {extracted_data.get('company_name')} has high risk score: {vendor_risk.get('risk_score')}"
             })
 
         rag_service.add_invoice(extracted_data)
@@ -237,7 +236,7 @@ async def list_invoices(limit: int= 10) -> JSONResponse:
         }  
     )
 
-@router.get("ab-test/stats")
+@router.get("/ab-test/stats")
 async def get_ab_test_stats():
     ab_testing = get_ab_testing_service()
     stats = ab_testing.get_statistics()
