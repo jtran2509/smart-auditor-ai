@@ -309,19 +309,6 @@ def create_gradio_interface():
         """)
         
         with gr.Tabs():
-            with gr.TabItem("📤 Upload Invoice"):
-                with gr.Row():
-                    with gr.Column(scale=1):
-                        file_input = gr.File(
-                            label="📂 Upload invoice", 
-                            file_types=['.jpg', '.jpeg', '.png'],
-                            type="filepath"
-                        )
-                        upload_status = gr.Markdown("💡 Upload an image to analyze")
-                    
-                    with gr.Column(scale=2):
-                        output_text = gr.Markdown(label="📊 Analysis Results", value="Waiting for upload...")
-                        fraud_output = gr.Markdown(label="🚨 Fraud Detection", value="No analysis performed yet.")
             
             with gr.TabItem("📋 Sample Receipts"):
                 with gr.Row():
@@ -347,6 +334,21 @@ def create_gradio_interface():
                             label="🚨 Fraud Detection", 
                             value="No analysis performed yet."
                         )
+
+            with gr.TabItem("📤 Upload Invoice"):
+                with gr.Row():
+                    with gr.Column(scale=1):
+                        file_input = gr.File(
+                            label="📂 Upload invoice", 
+                            file_types=['.jpg', '.jpeg', '.png'],
+                            type="filepath"
+                        )
+                        upload_status = gr.Markdown("💡 Upload an image to analyze")
+                    
+                    with gr.Column(scale=2):
+                        output_text = gr.Markdown(label="📊 Analysis Results", value="Waiting for upload...")
+                        fraud_output = gr.Markdown(label="🚨 Fraud Detection", value="No analysis performed yet.")
+            
         
         # Hidden store for invoice_id
         invoice_id_store = gr.Textbox(visible=False)
