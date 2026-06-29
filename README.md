@@ -8,8 +8,8 @@
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97-Live%20Demo-blue)](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
 
-## 🖥 Live demo preview 
-![Smart Auditor AI](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
+## 🖥 Live demo preview: [Smart Auditor AI](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
+
 *Upload an invoice and get instant fraud analysis and AI-generated audit reports*
 
 ## 📌 Overview
