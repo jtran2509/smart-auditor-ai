@@ -8,8 +8,11 @@
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97-Live%20Demo-blue)](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
 [![CI/CD](https://github.com/jtran2509/smart-auditor-ai/actions/workflows/test.yml/badge.svg)](https://github.com/jtran2509/smart-auditor-ai/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Demo link: [Smart Auditor AI](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
+## 🖥 Live demo preview 
+![Smart Auditor AI](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
+*Upload an invoice and get instant fraud analysis and AI-generated audit reports*
 
 ## 📌 Overview
 Smart Auditor AI is an end-to-end invoice fraud detection system that automatically:
@@ -83,10 +86,10 @@ python app/gradio_app.py
 After fine-tuning on 264 SROIE sample
 | Metric | Value |
 |--------|-------|
-| Train Samples | 264 |
-| Test Samples | 67 |
-| Validation Loss | 0.27 |
-| F1 score | ~0.65 |
+| Train Samples | 533 |
+| Test Samples | 134 |
+| Validation Loss | 0.07 |
+| F1 score | ~0.91 |
 
 ## 🛠 Tech stack
 | Component | Technology |
@@ -100,16 +103,30 @@ After fine-tuning on 264 SROIE sample
 
 ## 📂 Project Structure
 smart-auditor-ai/
-├── app/
-│   ├── api/           # FastAPI endpoints
-│   ├── models/        # LayoutLMv3 processor
-│   ├── services/      # RAG, MCP services
-│   └── gradio_app.py  # Web UI
-├── data/              # Training data (gitignored)
-├── models/            # Fine-tuned model
-├── scripts/           # Data preparation
-├── tests/             # Unit tests
+├── .github/workflows/       # CI/CD Pipelines (GitHub Actions)
+│   └── test.yml
+├── app/                     # Application core
+│   ├── agents/              # MCP Server implementation
+│   ├── api/                 # FastAPI Routes
+│   ├── models/              # Invoice Processor (LayoutLMv3)
+│   └── services/            # RAG, LLM, A/B Testing services
+├── data/                    # Datasets and uploads
+├── models/                  # Fine-tuned LayoutLMv3 model
+├── scripts/                 # Data preparation scripts
+├── tests/                   # Unit and integration tests
+├── gradio_app.py            # Gradio UI entry point
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
 └── README.md
 
 ## License
 MIT
+
+## 👤 Author
+
+**Dung (Jade) Tran**
+
+[![GitHub](https://img.shields.io/badge/GitHub-jtran2509-181717?style=flat&logo=github)](https://github.com/jtran2509)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jade%20Tran-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/dungtran99/)
+[![Email](https://img.shields.io/badge/Email-jade.tran%40example.com-red?style=flat&logo=gmail)](mailto:dungvn1999@gmail.)
