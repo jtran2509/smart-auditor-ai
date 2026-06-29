@@ -3,12 +3,10 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green.svg)](https://fastapi.tiangolo.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-4.44+-orange.svg)](https://gradio.app/)
-[![CI Tests](https://img.shields.io/badge/CI%20Tests-Passing-brightgreen.svg)](https://github.com/jtran2509/smart-auditor-ai/actions)
+[![CI/CD](https://img.shields.io/badge/CI%20Tests-Passing-brightgreen.svg)](https://github.com/jtran2509/smart-auditor-ai/actions)
 [![Deploy](https://img.shields.io/badge/Deploy-Successful-brightgreen.svg)](https://github.com/jtran2509/smart-auditor-ai/deployments)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97-Live%20Demo-blue)](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
-[![CI/CD](https://github.com/jtran2509/smart-auditor-ai/actions/workflows/test.yml/badge.svg)](https://github.com/jtran2509/smart-auditor-ai/actions/workflows/test.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🖥 Live demo preview 
 ![Smart Auditor AI](https://huggingface.co/spaces/jade2509/smart-auditor-ai)
